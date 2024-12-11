@@ -2,18 +2,19 @@
 
 
 #header{
+    display: flex;
     width: 100%;
 }
 .header_nav{
     display: flex;
     max-width: 1325px;
     margin: 0 auto;
-    justify-content: space-between;
-    padding: 40px;
+    /* justify-content: space-between; */
+    /* padding: 40px; */
     border: 5px solid green;
 }
-.nav img{ 
-
+.header_ul img{
+    width: 10%
 }
 .header_ul{
     display: flex;
@@ -23,9 +24,9 @@
     font-family: "Inter", sans-serif;
     border: 5px solid black;
     align-items: center;
-}
-.header_ul li{
-    
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
 }
 .header_button{
     display: flex;
@@ -34,7 +35,24 @@
     border: none;
     border-radius: 6px;
     /* border: 5px solid yellow; */
+    padding: 20px;
     color: #fff;
-    padding: 15px;
-    text-align: center;
+    font-size:medium;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.header_li{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.header_li{
+    cursor: pointer;
+}
+
+.header_li li:hover{
+    color: #2194f3;
+}
+.header_button:hover{
+    transform: scale(1.05);
 }
