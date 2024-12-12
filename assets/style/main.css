@@ -21,10 +21,12 @@ main {
     border-radius: 3px;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
 .bloco_1btn:hover {
     background-color: #8ddb90;
+    transform: scale(1.2);
 }
 
 main h3 {
@@ -59,10 +61,13 @@ main p {
     display: flex;
     align-items: center;
     justify-content: space-around; 
+    padding: 10px;
 }
+
 
 .bloco_4 ul {
     display: flex;
+
 }
 
 .bloco_4 li {
@@ -73,10 +78,81 @@ main p {
 .bloco_4 a {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 12px;
+    transition: transform 0.3s ease;
+}
+
+.bloco_4 a:hover {
+    transform: scale(1.2);
 }
 
 .bloco_4_direito {
+    margin-top: 13px;
+}
+
+.bloco_4_direito span {
+    font-size: 12px;
+    color: #89939E;
+    letter-spacing: 1px;
+}
+
+.bloco_4_direito_links {
     display: flex;
     flex-direction: column;
+}
+
+.bloco_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 354px;
+    width: 100%;
+    border: solid blue 2px;
+}
+
+.bloco_5_direito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 23px;
+}
+
+.bloco_5_direito div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+}
+
+.bloco_link {
+    border: solid red 2px;
+    width: 220px;
+    height: 123px;
+    color: #717171;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #F5F7FA;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.bloco_link li {
+    color: #4CAF4F;
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+}
+
+.bloco_5_direito img {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
 }
