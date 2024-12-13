@@ -1,16 +1,21 @@
 main {
     display: flex;
     flex-direction: column;
-    max-width: 1325px;
+    height: 1565px;
+    width:  100%;
     height: 100%;
-    border: solid 2px red;
 }
 
 .bloco_1 {
     display: flex;
-    border: solid 2px green;
     justify-content: space-around;
     align-items: center;
+    padding: 20px;
+    max-width: 1325px;
+}
+
+.bloco_1_direito {
+    width: 460px;
 }
 
 .bloco_1btn {
@@ -42,26 +47,132 @@ main p {
 }
 
 .bloco_2 {
-    border: solid blue 2px;
+    max-width: 1325px;
+    height: 202px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
 }
 
+.bloco_2_esquerdo {
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+.bloco_2_esquerdo div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloco_2_esquerdo img {
+    width: 35px;
+    height: 24px;
+}
+
+.bloco_2_esquerdo div h4 {
+    font-size: 29px;
+    margin-top: 8px;
+    color: 263238;
+    font-weight: bolder;
+    color: #263238;
+}
+
+.bloco_2 p {
+  font-size: 11px;
+  line-height: 16px; 
+  color: #717171;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.bloco_2 h4 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #4D4D4D;
+    margin: 0;
+    padding: 0;
+}
+
+.bloco_2 img {
+    width: 32px;
+    height: 21px;
+    display: flex;
+    margin-top: 8px;
+    position: inside;
+}
+
+.bloco_2_direito {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    width: 376px;
+    height: 114px;
+}
+
+.bloco_2_up {
+    width: 100%;
+    height: 43px;
+    display: flex;   
+}
+
+.bloco_2_direito_A {
+    width: 177px;
+    display: flex; 
+    gap: 12px;  
+}
+
+.bloco_2_sub {
+    display: flex;
+    flex-direction: column;    
+}
+
+.bloco_2_direito_B {
+    width: 177px;
+    display: flex; 
+    gap: 12px;    
+}
+
+.bloco_2_down {
+    width: 100%;
+    height: 43px;
+    display: flex;
+}
+
+.bloco_2_down_A, .bloco_2_down_B {
+    width: 177px;
+    display: flex; 
+    gap: 12px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: column;
+}
+
 .bloco_3 {
-    border: solid black 2px;
+    max-width: 1325px;
     display: flex;
     align-items: center;
     justify-content: space-around; 
+    padding: 22px;
+    gap: 0;
 }
 
 .bloco_4 {
-    border: solid yellow 2px;
     display: flex;
     align-items: center;
+    max-width: 1325px;
     justify-content: space-around; 
-    padding: 10px;
+    height: 271px;
+    width: 100%;
 }
 
 
@@ -73,6 +184,8 @@ main p {
 .bloco_4 li {
     display: flex;
     justify-content: space-between;
+    list-style: none;
+
 }
 
 .bloco_4 a {
@@ -80,11 +193,19 @@ main p {
     justify-content: space-between;
     align-items: center;
     margin: 12px;
-    transition: transform 0.3s ease;
+    text-decoration: none;
+    transition: transform 0.4s ease;
 }
 
 .bloco_4 a:hover {
     transform: scale(1.2);
+
+}
+
+.bloco_4 p {
+    line-height: 1.5;
+    margin-bottom: -17px;
+    font-size: 11px;
 }
 
 .bloco_4_direito {
@@ -99,6 +220,7 @@ main p {
 
 .bloco_4_direito_links {
     display: flex;
+    margin-left: -50px;
     flex-direction: column;
 }
 
@@ -108,17 +230,39 @@ main p {
     align-items: center;
     height: 354px;
     width: 100%;
-    border: solid blue 2px;
+    max-width: 1325px;
 }
 
-.bloco_5_direito {
+.bloco_5_up {
+    width: 772px;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bloco_5_up p {
+    margin-top: -23px;
+    font-size: 11px;
+    color: #717171;
+    line-height: 1.5;
+}
+
+.bloco_5_up h3 {
+    font-size: 25px;
+    color: #4D4D4D;
+    margin-top: 0;
+}
+
+.bloco_5_down {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 23px;
 }
 
-.bloco_5_direito div {
+.bloco_5_down div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +272,6 @@ main p {
 }
 
 .bloco_link {
-    border: solid red 2px;
     width: 220px;
     height: 123px;
     color: #717171;
@@ -141,7 +284,9 @@ main p {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    z-index: 1;
+    position: relative;
+    top: -68px;
+
 }
 
 .bloco_link li {
@@ -149,10 +294,12 @@ main p {
     font-size: 14px;
     font-weight: 600;
     list-style: none;
+    margin-top: 12px;
 }
 
 .bloco_5_direito img {
-    position: absolute;
+    
     display: flex;
     justify-content: space-between;
+    position: absolute;
 }
