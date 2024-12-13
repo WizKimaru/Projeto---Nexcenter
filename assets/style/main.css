@@ -1,17 +1,18 @@
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     height: 1565px;
     width:  100%;
-    height: 100%;
 }
 
 .bloco_1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
     max-width: 1325px;
+    gap: 15px;
 }
 
 .bloco_1_direito {
@@ -51,7 +52,7 @@ main p {
     height: 202px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
 }
 
@@ -59,7 +60,7 @@ main p {
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
-    gap: 3px;
+    
 
 }
 
@@ -112,15 +113,16 @@ main p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
-    width: 376px;
+    width: 525px;
     height: 114px;
 }
 
 .bloco_2_up {
     width: 100%;
     height: 43px;
-    display: flex;   
+    display: flex; 
+    display: flex;
+    justify-content: end;
 }
 
 .bloco_2_direito_A {
@@ -144,6 +146,7 @@ main p {
     width: 100%;
     height: 43px;
     display: flex;
+    justify-content: end;
 }
 
 .bloco_2_down_A, .bloco_2_down_B {
@@ -169,11 +172,13 @@ main p {
 .bloco_4 {
     display: flex;
     align-items: center;
-    max-width: 1325px;
     justify-content: space-around; 
     height: 271px;
-    width: 100%;
+    max-width: 1325px;
+    gap: 20px;
 }
+
+
 
 
 .bloco_4 ul {
@@ -210,6 +215,9 @@ main p {
 
 .bloco_4_direito {
     margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .bloco_4_direito span {
@@ -229,7 +237,6 @@ main p {
     flex-direction: column;
     align-items: center;
     height: 354px;
-    width: 100%;
     max-width: 1325px;
 }
 
@@ -302,4 +309,125 @@ main p {
     display: flex;
     justify-content: space-between;
     position: absolute;
+}
+
+@media (max-width: 1200px) {
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .bloco_1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .bloco_1_direito {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .bloco_2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    .bloco_2_direito {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+}
+
+    .bloco_3 {
+        display: flex;
+        flex-direction: column;
+        padding: 90px;
+    }
+
+    .bloco_3_direito {
+        margin-top: -30px;
+    }
+
+    .bloco_4 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -50px;
+    }
+
+    .bloco_4_direito{
+        
+        width: 90%;
+    }
+
+    .bloco_5 {
+        margin-top: 500px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .bloco_5_up {
+        width: 100%;
+        padding: 20px;
+        max-width: 350px;
+        width: 100%;
+        height: 87px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+.bloco_5_down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+.bloco_5_down div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  
+}
+
+    
+
+    
+.bloco_4_direito span {
+    font-size: 10px;
+    color: #89939E;
+    letter-spacing: 0;
+}
+
+.bloco_4_direito_links  {
+    margin-left: -39px;
+}
+
+.bloco_4_direito_links a{
+    display: flex;
+    margin: 2px;
+    flex-direction: column;
+    
+
+}
+
+.bloco_4_direito_links li {
+    width: 100%;
+    margin: 1px;
+}
 }
