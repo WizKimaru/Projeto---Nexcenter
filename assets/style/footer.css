@@ -3,12 +3,12 @@
 
 /* section one */
 footer {
+    margin: 5% auto;
     font-family: "Inter", sans-serif;
     width: 100%;
     max-width: 1325px;
     color: #fff;
     padding: 40px 20px;
-
     gap: 30px;
 }
 
