@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+/*  font-family: "Inter", sans-serif; */
+
+/* section one */
+footer {
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    max-width: 1325px;
+    color: #fff;
+    padding: 40px 20px;
+
+    gap: 30px;
+}
+
+.footer_section_one{
+    text-align: center;
+    background-color: #F5F7FA;
+    padding: 25px;
+    color: #263238;
+}
+
+.footer_section_one h1 {
+    font-size:3rem;
+    margin-bottom: 20px;
+}
+
+.footer_section_one button {
+    background-color: #4CAF4F;
+    color: #F5F7FA;
+    border: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer_section_one button:hover {
+    background-color: #45a049;
+}
+/* fim section one */
+
+/* section two */
+.footer_section_two {
+    background-color: #263238;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 60px;
+}
+
+.footer_brand {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+.footer_brand img {
+    max-width: 200px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.footer_brand p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.footer_brand .social_icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.footer_brand .social_icons img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.footer_brand .social_icons img:hover {
+    transform: scale(1.1);
+}
+
+.footer_links {
+    display: flex;
+    gap: 65px;
+}
+
+.footer_links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.footer_links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer_links ul li  {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer_links ul li a{
+    color: #F5F7FA;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer_links ul li a:hover {
+    color: #abb7c4;
+}
+
+.footer_subscribe {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer_subscribe h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-left: 50px;
+}
+
+.footer_subscribe .subscribe_form {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.footer_subscribe input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    background-color: #89939e;
+    color: #fff;
+}
+
+.footer_subscribe button {
+    background-color: #89939e;
+    border: none;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_subscribe button img {
+    width: 20px;
+    height: 15px;
+}
+
