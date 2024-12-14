@@ -319,6 +319,7 @@ main p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 700px;
     }
     .bloco_1 {
         display: flex;
