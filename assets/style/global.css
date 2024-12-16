@@ -10,3 +10,54 @@ img{
 
 }
 
+.corpo_main, .main_clients, .main_community, .bloco_1, .bloco_2, .bloco_3, .bloco_4, .bloco_5 {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s, transform 1s ease-out;
+}
+
+.ativo {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.ativo.direita {
+    transform: translateX(0);
+}
+
+.ativo.baixo {
+    transform: translateY(0);
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
