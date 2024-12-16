@@ -1,4 +1,4 @@
-/*
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return rect.top >= 0 && rect.bottom <= window.innerHeight;
@@ -17,4 +17,3 @@ function animateOnScroll() {
 window.addEventListener('scroll', animateOnScroll);
 
 animateOnScroll();
-*/
