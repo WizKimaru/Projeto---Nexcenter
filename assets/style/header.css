@@ -35,6 +35,10 @@
     color: #263238;
 }
 
+.header_li a:hover {
+    text-decoration: underline;
+}
+
 .header_button {
     display: flex;
     font-family: "Inter", sans-serif;
